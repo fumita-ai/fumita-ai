@@ -1,12 +1,78 @@
-- 👋 Hi, I’m @fumita-ai
-- 👀 I’m interested in ...coffee 
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+# 目指せQグレーダー
 
-<!---
-fumita-ai/fumita-ai is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+スマホ（主に iPhone）のブラウザで動く、個人用の家計簿 Web アプリです。
+ホーム画面に追加してネイティブアプリのように使えます（PWA）。
+
+**公開先:** https://fumita-ai.github.io/fumita-ai/
+
+## できること
+
+- 支出・収入の登録／編集／削除
+- カテゴリ別の支出分析（ドーナツグラフ・カテゴリ別リスト）
+- カレンダー表示（日ごとの収支と履歴）
+- 貯金の可視化（牛乳瓶にコーヒー豆が溜まっていく表現）
+- データの書き出し・読み込み（JSON）
+
+データは端末のブラウザ内（localStorage）だけに保存されます。サーバーへの送信は一切行いません。
+
+## iPhone での使い方
+
+1. Safari で https://fumita-ai.github.io/fumita-ai/ を開く
+2. 共有ボタン → 「ホーム画面に追加」
+3. ホーム画面のアイコンから起動すると、全画面（standalone）で開きます
+
+機内モードでも起動・登録・閲覧ができます。オンラインのときに新しいバージョンがあれば自動で更新されます。
+
+### 機種変更するときは
+
+設定（各タブ右上の歯車）→「データの書き出し」で JSON ファイルを保存し、
+新しい端末で「データの読み込み」から取り込んでください。
+
+## 仕様の要点
+
+| 項目 | 内容 |
+|---|---|
+| 1 か月 | 前月 25 日 〜 当月 24 日（給料日基準）。例:「2026年9月」= 2026/8/25〜2026/9/24 |
+| 1 年 | 前年 12 月 25 日 〜 当年 12 月 24 日 |
+| カレンダータブ | ここだけ通常の暦月（1 日〜月末）で表示 |
+| 貯金額 | 初期貯金額 + 確定済みの各月の収支。25 日を迎えた時点で前の期間が確定する |
+| 金額 | 日本円の整数。履歴は 1〜9,999,999 円、貯金の目標額・初期貯金額は 0〜99,999,999 円 |
+| カテゴリ | 住宅・食費・衣服・趣味・日用品・その他 の 6 種類（固定） |
+| テーマ | 端末の設定に合わせてライト／ダークを自動切り替え |
+
+割合の表示は切り捨てです（カテゴリ別の割合は小数点以下 2 桁、貯金の達成率は 1 桁）。
+
+## 開発
+
+```sh
+npm install
+npm run dev        # 開発サーバー
+npm test           # 集計ロジックのテスト
+npm run typecheck  # 型チェック
+npm run build      # 本番ビルド（dist/）
+npm run preview    # ビルド結果の確認
+```
+
+アプリアイコンを作り直す場合:
+
+```sh
+node scripts/make-icons.mjs   # public/ に PNG と favicon.svg を生成
+```
+
+### 構成
+
+```
+src/
+  lib/        期間計算・表示フォーマット・集計・保存（テスト対象）
+  components/ 画面をまたいで使う部品（モーダル・グラフ・スワイプ削除など）
+  screens/    支出管理・カレンダー・資産管理・設定・支出詳細
+  store.tsx   アプリ全体の状態と localStorage への保存
+```
+
+### デプロイ
+
+`main` ブランチへの push で GitHub Actions が自動デプロイします
+（`.github/workflows/deploy.yml`）。
+
+初回のみ、リポジトリの **Settings → Pages → Source** を **GitHub Actions** に
+設定してください。

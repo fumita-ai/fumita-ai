@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A3A3C"/>
+      <stop offset="1" stop-color="#1C1C1E"/>
+    </linearGradient>
+    <clipPath id="inner">
+      <path d="M96 62 L96 88 C96 100 60 108 58 132 L58 214 A16 16 0 0 0 74 230 L182 230 A16 16 0 0 0 198 214 L198 132 C196 108 160 100 160 88 L160 62 Z"/>
+    </clipPath>
+  </defs>
+  <rect width="256" height="256" fill="url(#bg)"/>
+  <g transform="translate(10 10) scale(0.921875)">
+    <path d="M96 62 L96 88 C96 100 60 108 58 132 L58 214 A16 16 0 0 0 74 230 L182 230 A16 16 0 0 0 198 214 L198 132 C196 108 160 100 160 88 L160 62 Z" fill="#FFFFFF" fill-opacity="0.08"/>
+    <g clip-path="url(#inner)">
+      <g transform="translate(100 152) rotate(-30) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(128 152) rotate(-23) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(156 152) rotate(-16) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(86 178) rotate(13) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(114 178) rotate(20) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(142 178) rotate(27) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(170 178) rotate(-26) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(100 204) rotate(-4) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(128 204) rotate(3) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+      <g transform="translate(156 204) rotate(10) scale(1)">
+      <ellipse rx="13" ry="9.2" fill="#F5F5F7"/>
+      <path d="M-10 0.3 C-6.2 -4.4 -2.7 -4.4 0 0 C2.7 4.4 6.2 4.4 10 -0.3"
+            fill="none" stroke="#8E8E93" stroke-width="2.1" stroke-linecap="round"/>
+    </g>
+    </g>
+    <path d="M96 62 L96 88 C96 100 60 108 58 132 L58 214 A16 16 0 0 0 74 230 L182 230 A16 16 0 0 0 198 214 L198 132 C196 108 160 100 160 88 L160 62 Z" fill="none" stroke="#F5F5F7" stroke-width="9" stroke-linejoin="round"/>
+    <rect x="90" y="36" width="76" height="24" rx="9" fill="none" stroke="#F5F5F7" stroke-width="9"/>
+    <path d="M76 120 L76 168" stroke="#FFFFFF" stroke-opacity="0.32" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
